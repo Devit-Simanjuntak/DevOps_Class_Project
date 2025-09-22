@@ -2,7 +2,7 @@ name: Super-Linter
 
 on: push
 
-jobs: 
+jobs:
   super-lint:
     name: Lint code base
     runs-on: ubuntu-latest
@@ -14,4 +14,4 @@ jobs:
         uses: github/super-linter@v5
         env: 
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: $ {{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
